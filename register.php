@@ -54,6 +54,7 @@
             <input type="password" id="password" name="password" required>
             
             <button type="submit">Submit</button>
+            <p><a href="index.php">Back to Home</a></p>
         </form>
     </div>
 </body>

@@ -1,0 +1,15 @@
+services:
+  23rp01865-php:
+    build:
+      context: ./  # Set the context to the current folder (your project folder)
+    container_name: 23rp01865-php
+    ports:
+      - "8082:80"  # Exposing port 80 inside the container to port 8080 on the host
+    volumes:
+      - .C:\xampp\htdocs\23RP01865/var/www/html  # Mount the current directory to /var/www/html inside the container
+    networks:
+      - webnet
+
+networks:
+  webnet:
+    driver: bridge
